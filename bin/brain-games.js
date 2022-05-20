@@ -1,1 +1,5 @@
+#!/usr/bin/env node
+
+ import {askName } from '../node_modules/brain-games/src/cli.js';
 console.log("Welcome to the Brain Games!")
+askName();
