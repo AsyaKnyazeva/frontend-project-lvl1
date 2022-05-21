@@ -1,7 +1,3 @@
-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
-
-cli.mjs:
-
 import readlineSync from 'readline-sync';
 const askName = () => {
     const name = readlineSync.question('May I have your name? ');
