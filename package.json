@@ -15,7 +15,7 @@
   "dependencies": {
     "brain-games": "^1.1.5",
     "jest": "^28.1.0",
-    "readline-sync": "^8.5.5"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^8.16.0",
