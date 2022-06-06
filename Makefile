@@ -9,3 +9,6 @@ publish: # чистый запуск
 
 lint: #запуск eslint
 	npx eslint .
+
+brain-even:# запустить игру на четность
+	node bin/brain-even.js
