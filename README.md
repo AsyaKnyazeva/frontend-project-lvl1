@@ -7,3 +7,4 @@
 ## go-rest-service-example
 [![run-tests](https://github.com/AsyaKnyazeva/frontend-project-lvl1/workflows/run-tests/badge.svg)](https://github.com/AsyaKnyazeva/frontend-project-lvl1/actions)
 
+https://asciinema.org/a/5RZyWhJlDrfdB8GfwrkaKIJLT

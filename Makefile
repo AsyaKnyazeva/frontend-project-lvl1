@@ -12,3 +12,6 @@ lint: #запуск eslint
 
 brain-even:# запустить игру на четность
 	node bin/brain-even.js
+
+brain-calc:# запустить игру калькулятор
+	node bin/brain-calc.js
