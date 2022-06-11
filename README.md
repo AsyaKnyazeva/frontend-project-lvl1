@@ -8,3 +8,8 @@
 [![run-tests](https://github.com/AsyaKnyazeva/frontend-project-lvl1/workflows/run-tests/badge.svg)](https://github.com/AsyaKnyazeva/frontend-project-lvl1/actions)
 
 https://asciinema.org/a/5RZyWhJlDrfdB8GfwrkaKIJLT
+
+
+https://asciinema.org/a/2vfcaGqa5p8Rn5MmFPR23neAg
+
+https://asciinema.org/a/uNpmfJSRKfzbPpUNUDm2mbfak

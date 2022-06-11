@@ -15,3 +15,6 @@ brain-even:# запустить игру на четность
 
 brain-calc:# запустить игру калькулятор
 	node bin/brain-calc.js
+
+brain-gcd:# запустить игру НОД
+	node bin/brain-gcd.js
