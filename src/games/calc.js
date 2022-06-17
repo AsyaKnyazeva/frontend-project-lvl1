@@ -3,8 +3,6 @@
 
 export const rules = 'What is the result of the expression?';
 
-
-
 export const makeRound = () => {
   const randomNum1 = Math.round(Math.random() * 100);
   const randomNum2 = Math.round(Math.random() * 100);
@@ -25,5 +23,3 @@ export const makeRound = () => {
   const statement = `${randomNum1} ${neededOperator} ${randomNum2}`;
   return [correctAnswer, statement];
 };
-
-
