@@ -20,7 +20,7 @@ npm ci
 npm link
 ```
 
-## Even'
+## Even
 User is shown a random number and his task is to say whether this number even or not.
 
 Run game:
@@ -32,7 +32,7 @@ brain-even or node bin/brain-even.js
 ### Even Asciinema:
 https://asciinema.org/a/5RZyWhJlDrfdB8GfwrkaKIJLT
 
-## Calculator'
+## Calculator
 User is shown two random numbers and he is asked to solve three different maths operations.
 
 Run game:
@@ -43,7 +43,7 @@ brain-calc or node bin/brain-calc.js
 ### Calculator Asciinema:
 https://asciinema.org/a/2vfcaGqa5p8Rn5MmFPR23neAg
 
-## GCD'
+## GCD
 
 User is shown two random numbers and he is asked to find GCD for three times to win.
 
@@ -56,6 +56,8 @@ brain-gcd or node bin/brain-gcd.js
 ### GCD Asciinema:
 https://asciinema.org/a/uNpmfJSRKfzbPpUNUDm2mbfak
 
+## Progression
+
 User is shown a row of numbers with one missed. User is asked to find out the missed number of this progression for three times to win.
 
 Run game:
@@ -67,7 +69,7 @@ brain-progression or node bin/brain-progression.js
 ### Progression Asciinema:
 https://asciinema.org/a/t9pfWQnQ2fXDwioge6McTCEfq
 
-
+## Prime
 User is shown a random number and he is asked to check whether the number is prime or not.
 
 Run game:
