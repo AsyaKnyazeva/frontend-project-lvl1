@@ -12,7 +12,7 @@ const createGame = (round, rules) => {
     const [correctAnswer, statement] = round();
     console.log(`Question: ${statement}`);
     const yourAnswer = readlineSync.question('Your answer? ');
-    if (Number(yourAnswer) !== Number(correctAnswer)) {
+    if ((yourAnswer) != (correctAnswer)) {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       return;
     }
