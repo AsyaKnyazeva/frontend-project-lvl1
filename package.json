@@ -18,7 +18,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "brain-games": "^1.1.5",
     "jest": "^28.1.0",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
