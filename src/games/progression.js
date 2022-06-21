@@ -1,4 +1,5 @@
 import rand from '../rand.js';
+import createGame from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 
@@ -24,4 +25,6 @@ const makeRound = () => {
   return [correctAnswer, statement];
 };
 
-export { makeRound, rules };
+const newGame = () => createGame(rules, makeRound);
+
+export default newGame;

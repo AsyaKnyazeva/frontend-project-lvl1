@@ -1,4 +1,5 @@
 import rand from '../rand.js';
+import createGame from '../index.js';
 
 export const rules = 'What is the result of the expression?';
 
@@ -21,3 +22,6 @@ export const makeRound = () => {
   const statement = `${randomNum1} ${neededOperator} ${randomNum2}`;
   return [correctAnswer, statement];
 };
+const newGame = () => createGame(rules, makeRound);
+
+export default newGame;
