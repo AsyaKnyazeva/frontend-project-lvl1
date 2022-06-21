@@ -1,3 +1,5 @@
+import rand from '../rand.js';
+
 const rules = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (num1, num2) => {
@@ -13,8 +15,8 @@ const findGcd = (num1, num2) => {
 };
 
 const makeRound = () => {
-  const num1 = Math.round(Math.random() * 100);
-  const num2 = Math.round(Math.random() * 100);
+  const num1 = rand(0, 100);
+  const num2 = rand(0, 100);
   const statement = `${num1} ${num2}`;
   const correctAnswer = String(findGcd(num1, num2));
   return [correctAnswer, statement];

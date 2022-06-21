@@ -1,3 +1,5 @@
+import rand from '../rand.js';
+
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (num) => {
@@ -8,7 +10,7 @@ const isEven = (num) => {
 };
 
 const makeRound = () => {
-  const randomNum = Math.round(Math.random() * 100);
+  const randomNum = rand(0, 100);
   const statement = `${randomNum}`;
   const correctAnswer = isEven(randomNum) ? 'yes' : 'no';
   return [correctAnswer, statement];

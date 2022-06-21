@@ -1,3 +1,5 @@
+import rand from '../rand.js';
+
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (numberToCheck) => {
@@ -13,7 +15,7 @@ const isPrime = (numberToCheck) => {
 };
 
 const makeRound = () => {
-  const numberToCheck = Math.round(Math.random() * 100);
+  const numberToCheck = rand(0, 100);
   const statement = `${numberToCheck}`;
   const correctAnswer = isPrime(numberToCheck) ? 'yes' : 'no';
   return [correctAnswer, statement];

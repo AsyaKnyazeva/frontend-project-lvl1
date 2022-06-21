@@ -1,12 +1,13 @@
-#!/usr/bin/env node
+import rand from '../rand.js';
+
 export const rules = 'What is the result of the expression?';
 
 export const makeRound = () => {
-  const randomNum1 = Math.round(Math.random() * 100);
-  const randomNum2 = Math.round(Math.random() * 100);
+  const randomNum1 = rand(0, 100);
+  const randomNum2 = rand(0, 100);
   const randOperator = ['+', '-', '*'];
   const correctAnswer = [];
-  const k = Math.round(Math.random() * 2);
+  const k = rand(0, 2);
   const neededOperator = randOperator[k];
 
   if (neededOperator === '+') {
