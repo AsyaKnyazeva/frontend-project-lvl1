@@ -3,7 +3,7 @@ import createGame from '../index.js';
 
 export const rules = 'What is the result of the expression?';
 
-export const makeRound = () => {
+const makeRound = () => {
   const randomNum1 = rand(0, 100);
   const randomNum2 = rand(0, 100);
   const randOperator = ['+', '-', '*'];
@@ -22,6 +22,6 @@ export const makeRound = () => {
   const statement = `${randomNum1} ${neededOperator} ${randomNum2}`;
   return [correctAnswer, statement];
 };
-const newGame = () => createGame(rules, makeRound);
+const newGame = () => createGame(makeRound, rules);
 
 export default newGame;

@@ -25,6 +25,6 @@ const makeRound = () => {
   return [correctAnswer, statement];
 };
 
-const newGame = () => createGame(rules, makeRound);
+const newGame = () => createGame(makeRound, rules);
 
 export default newGame;
