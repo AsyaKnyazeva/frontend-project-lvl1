@@ -1,4 +1,4 @@
-import rand from '../rand.js';
+import makeRandomNumber from '../rand.js';
 import createGame from '../index.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -11,12 +11,12 @@ const isEven = (num) => {
 };
 
 const makeRound = () => {
-  const randomNum = rand(0, 100);
+  const randomNum = makeRandomNumber(0, 100);
   const statement = `${randomNum}`;
   const correctAnswer = isEven(randomNum) ? 'yes' : 'no';
   return [correctAnswer, statement];
 };
 
-const newGame = () => createGame(makeRound, rules);
+const makeNewGameEven = () => createGame(makeRound, rules);
 
-export default newGame;
+export default makeNewGameEven;

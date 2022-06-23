@@ -1,4 +1,4 @@
-import rand from '../rand.js';
+import makeRandomNumber from '../rand.js';
 import createGame from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
@@ -16,13 +16,13 @@ const findGcd = (num1, num2) => {
 };
 
 const makeRound = () => {
-  const num1 = rand(0, 100);
-  const num2 = rand(0, 100);
+  const num1 = makeRandomNumber(0, 100);
+  const num2 = makeRandomNumber(0, 100);
   const statement = `${num1} ${num2}`;
   const correctAnswer = String(findGcd(num1, num2));
   return [correctAnswer, statement];
 };
 
-const newGame = () => createGame(makeRound, rules);
+const makeNewGameGcd = () => createGame(makeRound, rules);
 
-export default newGame;
+export default makeNewGameGcd;

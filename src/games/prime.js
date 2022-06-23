@@ -1,4 +1,4 @@
-import rand from '../rand.js';
+import makeRandomNumber from '../rand.js';
 import createGame from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -16,12 +16,12 @@ const isPrime = (numberToCheck) => {
 };
 
 const makeRound = () => {
-  const numberToCheck = rand(0, 100);
+  const numberToCheck = makeRandomNumber(0, 100);
   const statement = `${numberToCheck}`;
   const correctAnswer = isPrime(numberToCheck) ? 'yes' : 'no';
   return [correctAnswer, statement];
 };
 
-const newGame = () => createGame(makeRound, rules);
+const makeNewGamePrime = () => createGame(makeRound, rules);
 
-export default newGame;
+export default makeNewGamePrime;

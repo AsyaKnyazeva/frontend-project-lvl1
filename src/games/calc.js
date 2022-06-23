@@ -1,27 +1,30 @@
-import rand from '../rand.js';
+import makeRandomNumber from '../rand.js';
 import createGame from '../index.js';
 
 export const rules = 'What is the result of the expression?';
 
 const makeRound = () => {
-  const randomNum1 = rand(0, 100);
-  const randomNum2 = rand(0, 100);
-  const randOperator = ['+', '-', '*'];
-  const correctAnswer = [];
-  const k = rand(0, 2);
-  const neededOperator = randOperator[k];
+  const random1 = makeRandomNumber(0, 100);
+  const random2 = makeRandomNumber(0, 100);
+  const operators = ['+', '-', '*'];
 
-  if (neededOperator === '+') {
-    correctAnswer.push(randomNum1 + randomNum2);
-  } else if (neededOperator === '-') {
-    correctAnswer.push(randomNum1 - randomNum2);
-  } else if (neededOperator === '*') {
-    correctAnswer.push(randomNum1 * randomNum2);
-  }
-
-  const statement = `${randomNum1} ${neededOperator} ${randomNum2}`;
+  const makeMathExercise = (randomNum1, randomNum2, randOperator) => {
+    switch (randOperator) {
+      case '+':
+        return randomNum1 + randomNum2;
+      case '-':
+        return randomNum1 - randomNum2;
+      case '*':
+        return randomNum1 * randomNum2;
+      default:
+        return `Unknown operand: '${randOperator}'!`;
+    }
+  };
+  const operator = operators[makeRandomNumber(0, operators.length - 1)];
+  const correctAnswer = makeMathExercise(random1, random2, operator).toString();
+  const statement = `${random1} ${operator} ${random2}`;
   return [correctAnswer, statement];
 };
-const newGame = () => createGame(makeRound, rules);
+const makeNewGameCalc = () => createGame(makeRound, rules);
 
-export default newGame;
+export default makeNewGameCalc;

@@ -1,4 +1,4 @@
-import rand from '../rand.js';
+import makeRandomNumber from '../rand.js';
 import createGame from '../index.js';
 
 const rules = 'What number is missing in the progression?';
@@ -14,11 +14,11 @@ const getProgression = (length, start, stepFunc) => {
 };
 
 const makeRound = () => {
-  const progrLength = rand(5, 10);
-  const progrStep = rand(5, 10);
-  const progrStart = rand(5, 10);
+  const progrLength = makeRandomNumber(5, 10);
+  const progrStep = makeRandomNumber(5, 10);
+  const progrStart = makeRandomNumber(5, 10);
   const progression = getProgression(progrLength, progrStart, progrStep);
-  const index = rand(0, progrLength - 1);
+  const index = makeRandomNumber(0, progrLength - 1);
   const correctAnswer = String(progression[index]);
   progression[index] = '..';
   const statement = progression.join(' ');
